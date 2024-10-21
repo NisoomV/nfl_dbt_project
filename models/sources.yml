@@ -1,0 +1,5 @@
+sources:
+  - name: play_by_play
+    database: nfl_raw
+    tables:
+      - name: pbp_raw

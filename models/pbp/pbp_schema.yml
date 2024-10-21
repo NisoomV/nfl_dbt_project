@@ -1,0 +1,20 @@
+models:
+  - name: games
+    description: "games played in a season"
+    columns:
+      - name: game_id
+        description: "game_id"
+      - name: old_game_id
+        description: "old_game_id"
+      - name: home_team
+        description: "home_team"
+      - name: away_team
+        description: "away_team"
+      - name: season_type
+        description: "REG or POST"
+      - name: week_number
+        description: "out of 17"
+      - name: game_date
+        description: "date of the game"
+  - name: plays
+    description: "play by play data"
