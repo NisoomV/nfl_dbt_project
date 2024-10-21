@@ -9,5 +9,5 @@ SELECT
     total_away_epa,
     total_away_rush_epa,
     total_away_pass_epa
-FROM {{ source('play_by_play', 'pbp_raw' ) }}
+FROM nfl_raw.play_by_play.pbp_raw
 ORDER BY game_id, play_id

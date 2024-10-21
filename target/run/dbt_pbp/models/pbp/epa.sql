@@ -1,4 +1,8 @@
-SELECT 
+
+  create or replace   view nfl_raw.dbt.epa
+  
+   as (
+    SELECT 
     game_id,
     play_id,
     home_team,
@@ -9,5 +13,7 @@ SELECT
     total_away_epa,
     total_away_rush_epa,
     total_away_pass_epa
-FROM {{ source('play_by_play', 'pbp_raw' ) }}
+FROM nfl_raw.play_by_play.pbp_raw
 ORDER BY game_id, play_id
+  );
+

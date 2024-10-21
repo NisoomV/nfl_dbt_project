@@ -1866,3 +1866,577 @@ ORDER BY game_id, qtr, game_time DESC
 [0m15:02:15.939686 [debug] [MainThread]: Command `dbt build` succeeded at 15:02:15.939613 after 3.16 seconds
 [0m15:02:15.940006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78301e79f800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x782fffc60da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x782fffaf52b0>]}
 [0m15:02:15.940302 [debug] [MainThread]: Flushing usage events
+[0m13:40:00.275185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ba83d54740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ba82e6bb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ba849d6b40>]}
+
+
+============================== 13:40:00.277885 | b11a77fc-ea1e-4969-ad65-f8b36ea9fdde ==============================
+[0m13:40:00.277885 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:40:00.278367 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vashinav/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/vashinav/COde/nfl_dbt_project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m13:40:00.288504 [info ] [MainThread]: dbt version: 1.8.7
+[0m13:40:00.288859 [info ] [MainThread]: python version: 3.12.4
+[0m13:40:00.289155 [info ] [MainThread]: python path: /home/vashinav/anaconda3/bin/python
+[0m13:40:00.289428 [info ] [MainThread]: os info: Linux-6.8.0-47-generic-x86_64-with-glibc2.39
+[0m13:40:01.148540 [info ] [MainThread]: Using profiles dir at /home/vashinav/.dbt
+[0m13:40:01.148908 [info ] [MainThread]: Using profiles.yml file at /home/vashinav/.dbt/profiles.yml
+[0m13:40:01.149193 [info ] [MainThread]: Using dbt_project.yml file at /home/vashinav/COde/nfl_dbt_project/dbt_project.yml
+[0m13:40:01.149847 [info ] [MainThread]: adapter type: snowflake
+[0m13:40:01.150134 [info ] [MainThread]: adapter version: 1.8.3
+[0m13:40:01.206910 [info ] [MainThread]: Configuration:
+[0m13:40:01.207281 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:40:01.207585 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:40:01.207889 [info ] [MainThread]: Required dependencies:
+[0m13:40:01.208199 [debug] [MainThread]: Executing "git --help"
+[0m13:40:01.210241 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:40:01.210587 [debug] [MainThread]: STDERR: "b''"
+[0m13:40:01.210860 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:40:01.211149 [info ] [MainThread]: Connection:
+[0m13:40:01.211445 [info ] [MainThread]:   account: ivrjxqt-dc51809
+[0m13:40:01.211737 [info ] [MainThread]:   user: vashinav
+[0m13:40:01.212016 [info ] [MainThread]:   database: nfl_raw
+[0m13:40:01.212286 [info ] [MainThread]:   warehouse: nfl_pbp
+[0m13:40:01.212559 [info ] [MainThread]:   role: nfl_role
+[0m13:40:01.212824 [info ] [MainThread]:   schema: dbt
+[0m13:40:01.213081 [info ] [MainThread]:   authenticator: None
+[0m13:40:01.213331 [info ] [MainThread]:   oauth_client_id: None
+[0m13:40:01.213586 [info ] [MainThread]:   query_tag: None
+[0m13:40:01.213829 [info ] [MainThread]:   client_session_keep_alive: False
+[0m13:40:01.214069 [info ] [MainThread]:   host: None
+[0m13:40:01.214310 [info ] [MainThread]:   port: None
+[0m13:40:01.214560 [info ] [MainThread]:   proxy_host: None
+[0m13:40:01.214806 [info ] [MainThread]:   proxy_port: None
+[0m13:40:01.215044 [info ] [MainThread]:   protocol: None
+[0m13:40:01.215286 [info ] [MainThread]:   connect_retries: 1
+[0m13:40:01.215528 [info ] [MainThread]:   connect_timeout: None
+[0m13:40:01.215774 [info ] [MainThread]:   retry_on_database_errors: False
+[0m13:40:01.216023 [info ] [MainThread]:   retry_all: False
+[0m13:40:01.216258 [info ] [MainThread]:   insecure_mode: False
+[0m13:40:01.216494 [info ] [MainThread]:   reuse_connections: None
+[0m13:40:01.216851 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:40:01.218679 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:40:01.219183 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:40:01.219441 [debug] [MainThread]: On debug: select 1 as id
+[0m13:40:01.219694 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:40:02.391578 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.172 seconds
+[0m13:40:02.392931 [debug] [MainThread]: On debug: Close
+[0m13:40:02.465638 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:40:02.466230 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:40:02.473015 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.235898, "process_user_time": 1.688727, "process_kernel_time": 0.239075, "process_mem_max_rss": "215456", "process_in_blocks": "223600", "process_out_blocks": "1120"}
+[0m13:40:02.473846 [debug] [MainThread]: Command `dbt debug` succeeded at 13:40:02.473723 after 2.24 seconds
+[0m13:40:02.474261 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:40:02.474712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ba83d54740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ba814eec60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ba65295d90>]}
+[0m13:40:02.475198 [debug] [MainThread]: Flushing usage events
+[0m13:40:15.846953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6a057cff80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6a0580a540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6a0580a840>]}
+
+
+============================== 13:40:15.848899 | d8328249-8c4e-421a-9525-1453f96a25e5 ==============================
+[0m13:40:15.848899 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:40:15.849323 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vashinav/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vashinav/COde/nfl_dbt_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt list', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:40:16.432908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd8328249-8c4e-421a-9525-1453f96a25e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c69e79aafc0>]}
+[0m13:40:16.469262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd8328249-8c4e-421a-9525-1453f96a25e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c69e7392fc0>]}
+[0m13:40:16.469804 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:40:16.475678 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m13:40:16.572534 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m13:40:16.572979 [debug] [MainThread]: Partial parsing: added file: dbt_pbp://models/pbp/epa.sql
+[0m13:40:16.573389 [debug] [MainThread]: Partial parsing: updated file: dbt_pbp://models/pbp/pbp_schema.yml
+[0m13:40:16.770403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd8328249-8c4e-421a-9525-1453f96a25e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c69e73c0e00>]}
+[0m13:40:16.891506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd8328249-8c4e-421a-9525-1453f96a25e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c69ea10baa0>]}
+[0m13:40:16.892783 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 1.0769145, "process_user_time": 1.792875, "process_kernel_time": 0.212459, "process_mem_max_rss": "219180", "process_in_blocks": "4936", "process_out_blocks": "1792"}
+[0m13:40:16.893243 [debug] [MainThread]: Command `dbt list` succeeded at 13:40:16.893162 after 1.08 seconds
+[0m13:40:16.893591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c69e6b3cb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c69ea10baa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c69e6b81940>]}
+[0m13:40:16.893886 [debug] [MainThread]: Flushing usage events
+[0m13:48:43.400160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0756659040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e07563b79e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0753cf0bc0>]}
+
+
+============================== 13:48:43.402187 | d46c0c95-4a2d-458a-a9f9-85ed1e9702c2 ==============================
+[0m13:48:43.402187 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:48:43.402687 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vashinav/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vashinav/COde/nfl_dbt_project/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:48:43.965526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd46c0c95-4a2d-458a-a9f9-85ed1e9702c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0740a4ee40>]}
+[0m13:48:44.001790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd46c0c95-4a2d-458a-a9f9-85ed1e9702c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e07363b6c30>]}
+[0m13:48:44.002349 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:48:44.008000 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m13:48:44.083194 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m13:48:44.083784 [debug] [MainThread]: Partial parsing: updated file: dbt_pbp://models/pbp/pbp_schema.yml
+[0m13:48:44.084149 [debug] [MainThread]: Partial parsing: updated file: dbt_pbp://models/pbp/epa.sql
+[0m13:48:44.207246 [error] [MainThread]: Encountered an error:
+Compilation Error in model epa (models/pbp/epa.sql)
+  unexpected char '`' at 218
+    line 12
+      FROM {{ source(`play_by_play', 'pbp_raw' ) }}
+[0m13:48:44.208124 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.83914536, "process_user_time": 1.593327, "process_kernel_time": 0.19766, "process_mem_max_rss": "214904", "process_in_blocks": "16", "process_out_blocks": "8", "command_success": false}
+[0m13:48:44.208589 [debug] [MainThread]: Command `dbt run` failed at 13:48:44.208511 after 0.84 seconds
+[0m13:48:44.208976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e07541c35c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e073608d1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e07361df3e0>]}
+[0m13:48:44.209347 [debug] [MainThread]: Flushing usage events
+[0m13:49:08.810639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77813fd50500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77813ff18f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77813ff1b890>]}
+
+
+============================== 13:49:08.812647 | 1732971a-6afe-44e0-9e06-4bf64fc715a2 ==============================
+[0m13:49:08.812647 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:49:08.813055 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vashinav/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/vashinav/COde/nfl_dbt_project/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:49:09.376973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778127577e00>]}
+[0m13:49:09.413296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7781226fcd40>]}
+[0m13:49:09.413872 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:49:09.419509 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m13:49:09.494433 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m13:49:09.495021 [debug] [MainThread]: Partial parsing: updated file: dbt_pbp://models/pbp/pbp_schema.yml
+[0m13:49:09.495372 [debug] [MainThread]: Partial parsing: updated file: dbt_pbp://models/pbp/epa.sql
+[0m13:49:09.693255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778122f20860>]}
+[0m13:49:09.740844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778122312690>]}
+[0m13:49:09.741238 [info ] [MainThread]: Found 3 models, 1 source, 453 macros
+[0m13:49:09.741568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7781221b25a0>]}
+[0m13:49:09.742688 [info ] [MainThread]: 
+[0m13:49:09.743173 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:49:09.746274 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_nfl_raw'
+[0m13:49:09.755348 [debug] [ThreadPool]: Using snowflake connection "list_nfl_raw"
+[0m13:49:09.755708 [debug] [ThreadPool]: On list_nfl_raw: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "connection_name": "list_nfl_raw"} */
+show terse schemas in database nfl_raw
+    limit 10000
+[0m13:49:09.755986 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:49:14.143789 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 4.388 seconds
+[0m13:49:14.145519 [debug] [ThreadPool]: On list_nfl_raw: Close
+[0m13:49:14.202208 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nfl_raw, now list_nfl_raw_dbt)
+[0m13:49:14.210939 [debug] [ThreadPool]: Using snowflake connection "list_nfl_raw_dbt"
+[0m13:49:14.211365 [debug] [ThreadPool]: On list_nfl_raw_dbt: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "connection_name": "list_nfl_raw_dbt"} */
+show objects in nfl_raw.dbt limit 10000
+[0m13:49:14.211778 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:49:14.962921 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.751 seconds
+[0m13:49:14.964937 [debug] [ThreadPool]: On list_nfl_raw_dbt: Close
+[0m13:49:15.079307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7781415a88c0>]}
+[0m13:49:15.080027 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:49:15.080446 [info ] [MainThread]: 
+[0m13:49:15.090130 [debug] [Thread-1 (]: Began running node model.dbt_pbp.epa
+[0m13:49:15.090813 [debug] [Thread-2 (]: Began running node model.dbt_pbp.games
+[0m13:49:15.091593 [info ] [Thread-1 (]: 1 of 3 START sql view model dbt.epa ............................................ [RUN]
+[0m13:49:15.092313 [debug] [Thread-3 (]: Began running node model.dbt_pbp.plays
+[0m13:49:15.093042 [info ] [Thread-2 (]: 2 of 3 START sql view model dbt.games .......................................... [RUN]
+[0m13:49:15.093591 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_nfl_raw_dbt, now model.dbt_pbp.epa)
+[0m13:49:15.094251 [info ] [Thread-3 (]: 3 of 3 START sql view model dbt.plays .......................................... [RUN]
+[0m13:49:15.094984 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_pbp.games'
+[0m13:49:15.095490 [debug] [Thread-1 (]: Began compiling node model.dbt_pbp.epa
+[0m13:49:15.096016 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_pbp.plays'
+[0m13:49:15.096439 [debug] [Thread-2 (]: Began compiling node model.dbt_pbp.games
+[0m13:49:15.103407 [debug] [Thread-3 (]: Began compiling node model.dbt_pbp.plays
+[0m13:49:15.103943 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_pbp.epa"
+[0m13:49:15.105859 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_pbp.games"
+[0m13:49:15.107872 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_pbp.plays"
+[0m13:49:15.108494 [debug] [Thread-1 (]: Began executing node model.dbt_pbp.epa
+[0m13:49:15.108918 [debug] [Thread-2 (]: Began executing node model.dbt_pbp.games
+[0m13:49:15.129655 [debug] [Thread-3 (]: Began executing node model.dbt_pbp.plays
+[0m13:49:15.130044 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_pbp.epa"
+[0m13:49:15.131945 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_pbp.games"
+[0m13:49:15.133830 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_pbp.plays"
+[0m13:49:15.134535 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_pbp.epa"
+[0m13:49:15.135214 [debug] [Thread-1 (]: On model.dbt_pbp.epa: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.epa"} */
+create or replace   view nfl_raw.dbt.epa
+  
+   as (
+    SELECT 
+    game_id,
+    play_id,
+    home_team,
+    total_home_epa,
+    total_home_rush_epa,
+    total_home_pass_epa,
+    away_team,
+    total_away_epa,
+    total_away_rush_epa,
+    total_away_pass_epa
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY game_id, play_id
+  );
+[0m13:49:15.135589 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:49:15.136209 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_pbp.plays"
+[0m13:49:15.137188 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_pbp.games"
+[0m13:49:15.137899 [debug] [Thread-3 (]: On model.dbt_pbp.plays: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.plays"} */
+create or replace   view nfl_raw.dbt.plays
+  
+   as (
+    SELECT
+    play_id,
+    game_id,
+    posteam,
+    defteam,
+    side_of_field,
+    yardline_100,
+    game_half,
+    qtr,
+    down,
+    ydstogo,
+    game_time,
+    play_desc,
+    play_type,
+    yards_gained,
+    pass_length,
+    pass_location,
+    air_yards,
+    yards_after_catch,
+    run_location,
+    run_gap,
+    posteam_score,
+    defteam_score,
+    score_differential
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY game_id, qtr, game_time DESC
+  );
+[0m13:49:15.138413 [debug] [Thread-2 (]: On model.dbt_pbp.games: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.games"} */
+create or replace   view nfl_raw.dbt.games
+  
+   as (
+    SELECT DISTINCT
+    game_id,
+    old_game_id,
+    home_team,
+    away_team,
+    season_type,
+    week_number,
+    game_date
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY old_game_id
+  );
+[0m13:49:15.138764 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:49:15.139116 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:49:15.678198 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.543 seconds
+[0m13:49:15.695539 [debug] [Thread-1 (]: On model.dbt_pbp.epa: Close
+[0m13:49:15.855855 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778122694e60>]}
+[0m13:49:15.856654 [info ] [Thread-1 (]: 1 of 3 OK created sql view model dbt.epa ....................................... [[32mSUCCESS 1[0m in 0.76s]
+[0m13:49:15.857368 [debug] [Thread-1 (]: Finished running node model.dbt_pbp.epa
+[0m13:49:16.058757 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.919 seconds
+[0m13:49:16.064515 [debug] [Thread-2 (]: On model.dbt_pbp.games: Close
+[0m13:49:16.195194 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77812253f6b0>]}
+[0m13:49:16.196000 [info ] [Thread-2 (]: 2 of 3 OK created sql view model dbt.games ..................................... [[32mSUCCESS 1[0m in 1.10s]
+[0m13:49:16.196693 [debug] [Thread-2 (]: Finished running node model.dbt_pbp.games
+[0m13:49:18.956340 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 3.817 seconds
+[0m13:49:18.958910 [debug] [Thread-3 (]: On model.dbt_pbp.plays: Close
+[0m13:49:19.120055 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1732971a-6afe-44e0-9e06-4bf64fc715a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778121902300>]}
+[0m13:49:19.120906 [info ] [Thread-3 (]: 3 of 3 OK created sql view model dbt.plays ..................................... [[32mSUCCESS 1[0m in 4.02s]
+[0m13:49:19.121583 [debug] [Thread-3 (]: Finished running node model.dbt_pbp.plays
+[0m13:49:19.123425 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:49:19.123858 [debug] [MainThread]: Connection 'model.dbt_pbp.epa' was properly closed.
+[0m13:49:19.124223 [debug] [MainThread]: Connection 'model.dbt_pbp.games' was properly closed.
+[0m13:49:19.124571 [debug] [MainThread]: Connection 'model.dbt_pbp.plays' was properly closed.
+[0m13:49:19.125080 [info ] [MainThread]: 
+[0m13:49:19.125488 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 9.38 seconds (9.38s).
+[0m13:49:19.126448 [debug] [MainThread]: Command end result
+[0m13:49:19.144669 [info ] [MainThread]: 
+[0m13:49:19.145031 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:49:19.145302 [info ] [MainThread]: 
+[0m13:49:19.145577 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m13:49:19.146274 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.366926, "process_user_time": 2.246647, "process_kernel_time": 0.256759, "process_mem_max_rss": "225072", "process_in_blocks": "96", "process_out_blocks": "2784"}
+[0m13:49:19.146705 [debug] [MainThread]: Command `dbt run` succeeded at 13:49:19.146618 after 10.37 seconds
+[0m13:49:19.147007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7781404b3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778140047ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7781223eaea0>]}
+[0m13:49:19.147294 [debug] [MainThread]: Flushing usage events
+[0m13:52:29.021030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291e3a7d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291d293dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291f8a35c0>]}
+
+
+============================== 13:52:29.022909 | fa3f85c0-e221-4d91-b151-871d70a31a25 ==============================
+[0m13:52:29.022909 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:52:29.023319 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vashinav/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/vashinav/COde/nfl_dbt_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:52:29.582149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628ffd2b4a0>]}
+[0m13:52:29.617863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291ce0aae0>]}
+[0m13:52:29.618410 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:52:29.624028 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m13:52:29.699497 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:52:29.700098 [debug] [MainThread]: Partial parsing: updated file: dbt_pbp://models/pbp/pbp_schema.yml
+[0m13:52:29.901363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628ff7ffb30>]}
+[0m13:52:29.948335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628ff9862a0>]}
+[0m13:52:29.948739 [info ] [MainThread]: Found 3 models, 1 source, 453 macros
+[0m13:52:29.949061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628ffa73c20>]}
+[0m13:52:29.950169 [info ] [MainThread]: 
+[0m13:52:29.950634 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:52:29.953752 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_nfl_raw'
+[0m13:52:29.963640 [debug] [ThreadPool]: Using snowflake connection "list_nfl_raw"
+[0m13:52:29.963971 [debug] [ThreadPool]: On list_nfl_raw: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "connection_name": "list_nfl_raw"} */
+show terse schemas in database nfl_raw
+    limit 10000
+[0m13:52:29.964245 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:52:30.780409 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.816 seconds
+[0m13:52:30.782561 [debug] [ThreadPool]: On list_nfl_raw: Close
+[0m13:52:30.869837 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nfl_raw, now list_nfl_raw_dbt)
+[0m13:52:30.878480 [debug] [ThreadPool]: Using snowflake connection "list_nfl_raw_dbt"
+[0m13:52:30.878906 [debug] [ThreadPool]: On list_nfl_raw_dbt: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "connection_name": "list_nfl_raw_dbt"} */
+show objects in nfl_raw.dbt limit 10000
+[0m13:52:30.879296 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:52:31.531448 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.652 seconds
+[0m13:52:31.533515 [debug] [ThreadPool]: On list_nfl_raw_dbt: Close
+[0m13:52:31.590970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291e9260f0>]}
+[0m13:52:31.591641 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:52:31.592006 [info ] [MainThread]: 
+[0m13:52:31.594690 [debug] [Thread-1 (]: Began running node model.dbt_pbp.epa
+[0m13:52:31.595114 [debug] [Thread-2 (]: Began running node model.dbt_pbp.games
+[0m13:52:31.595532 [debug] [Thread-3 (]: Began running node model.dbt_pbp.plays
+[0m13:52:31.596011 [info ] [Thread-1 (]: 1 of 3 START sql view model dbt.epa ............................................ [RUN]
+[0m13:52:31.596472 [info ] [Thread-2 (]: 2 of 3 START sql view model dbt.games .......................................... [RUN]
+[0m13:52:31.596936 [info ] [Thread-3 (]: 3 of 3 START sql view model dbt.plays .......................................... [RUN]
+[0m13:52:31.597346 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_nfl_raw_dbt, now model.dbt_pbp.epa)
+[0m13:52:31.597742 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_pbp.games'
+[0m13:52:31.598114 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_pbp.plays'
+[0m13:52:31.598435 [debug] [Thread-1 (]: Began compiling node model.dbt_pbp.epa
+[0m13:52:31.598762 [debug] [Thread-2 (]: Began compiling node model.dbt_pbp.games
+[0m13:52:31.599066 [debug] [Thread-3 (]: Began compiling node model.dbt_pbp.plays
+[0m13:52:31.604846 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_pbp.epa"
+[0m13:52:31.607062 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_pbp.games"
+[0m13:52:31.611858 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_pbp.plays"
+[0m13:52:31.612796 [debug] [Thread-1 (]: Began executing node model.dbt_pbp.epa
+[0m13:52:31.618355 [debug] [Thread-2 (]: Began executing node model.dbt_pbp.games
+[0m13:52:31.634363 [debug] [Thread-3 (]: Began executing node model.dbt_pbp.plays
+[0m13:52:31.640002 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_pbp.epa"
+[0m13:52:31.642366 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_pbp.games"
+[0m13:52:31.644390 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_pbp.plays"
+[0m13:52:31.645299 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_pbp.games"
+[0m13:52:31.645729 [debug] [Thread-2 (]: On model.dbt_pbp.games: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.games"} */
+create or replace   view nfl_raw.dbt.games
+  
+   as (
+    SELECT DISTINCT
+    game_id,
+    old_game_id,
+    home_team,
+    away_team,
+    season_type,
+    week_number,
+    game_date
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY old_game_id
+  );
+[0m13:52:31.646382 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_pbp.plays"
+[0m13:52:31.646886 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_pbp.epa"
+[0m13:52:31.647208 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:52:31.647542 [debug] [Thread-3 (]: On model.dbt_pbp.plays: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.plays"} */
+create or replace   view nfl_raw.dbt.plays
+  
+   as (
+    SELECT
+    play_id,
+    game_id,
+    posteam,
+    defteam,
+    side_of_field,
+    yardline_100,
+    game_half,
+    qtr,
+    down,
+    ydstogo,
+    game_time,
+    play_desc,
+    play_type,
+    yards_gained,
+    pass_length,
+    pass_location,
+    air_yards,
+    yards_after_catch,
+    run_location,
+    run_gap,
+    posteam_score,
+    defteam_score,
+    score_differential
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY game_id, qtr, game_time DESC
+  );
+[0m13:52:31.647925 [debug] [Thread-1 (]: On model.dbt_pbp.epa: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.epa"} */
+create or replace   view nfl_raw.dbt.epa
+  
+   as (
+    SELECT 
+    game_id,
+    play_id,
+    home_team,
+    total_home_epa,
+    total_home_rush_epa,
+    total_home_pass_epa,
+    away_team,
+    total_away_epa,
+    total_away_rush_epa,
+    total_away_pass_epa
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY game_id, play_id
+  );
+[0m13:52:31.649169 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:52:31.649616 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:52:32.305082 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.655 seconds
+[0m13:52:32.324396 [debug] [Thread-1 (]: On model.dbt_pbp.epa: Close
+[0m13:52:32.540719 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.893 seconds
+[0m13:52:32.543264 [debug] [Thread-2 (]: On model.dbt_pbp.games: Close
+[0m13:52:32.545184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628ffb796d0>]}
+[0m13:52:32.546910 [info ] [Thread-1 (]: 1 of 3 OK created sql view model dbt.epa ....................................... [[32mSUCCESS 1[0m in 0.95s]
+[0m13:52:32.548068 [debug] [Thread-1 (]: Finished running node model.dbt_pbp.epa
+[0m13:52:32.609912 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628fef010a0>]}
+[0m13:52:32.610744 [info ] [Thread-2 (]: 2 of 3 OK created sql view model dbt.games ..................................... [[32mSUCCESS 1[0m in 1.01s]
+[0m13:52:32.611448 [debug] [Thread-2 (]: Finished running node model.dbt_pbp.games
+[0m13:52:32.792223 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.143 seconds
+[0m13:52:32.794713 [debug] [Thread-3 (]: On model.dbt_pbp.plays: Close
+[0m13:52:32.853631 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa3f85c0-e221-4d91-b151-871d70a31a25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628fef01010>]}
+[0m13:52:32.854431 [info ] [Thread-3 (]: 3 of 3 OK created sql view model dbt.plays ..................................... [[32mSUCCESS 1[0m in 1.26s]
+[0m13:52:32.855132 [debug] [Thread-3 (]: Finished running node model.dbt_pbp.plays
+[0m13:52:32.857069 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:52:32.857453 [debug] [MainThread]: Connection 'model.dbt_pbp.epa' was properly closed.
+[0m13:52:32.857823 [debug] [MainThread]: Connection 'model.dbt_pbp.games' was properly closed.
+[0m13:52:32.858147 [debug] [MainThread]: Connection 'model.dbt_pbp.plays' was properly closed.
+[0m13:52:32.858552 [info ] [MainThread]: 
+[0m13:52:32.859001 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 2.91 seconds (2.91s).
+[0m13:52:32.860070 [debug] [MainThread]: Command end result
+[0m13:52:32.878181 [info ] [MainThread]: 
+[0m13:52:32.878552 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:52:32.878838 [info ] [MainThread]: 
+[0m13:52:32.879116 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m13:52:32.879816 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.8894372, "process_user_time": 2.266986, "process_kernel_time": 0.269235, "process_mem_max_rss": "224696", "process_out_blocks": "2784", "process_in_blocks": "0"}
+[0m13:52:32.880230 [debug] [MainThread]: Command `dbt run` succeeded at 13:52:32.880157 after 3.89 seconds
+[0m13:52:32.880518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291da2f9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291dddf380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76291d544a70>]}
+[0m13:52:32.880810 [debug] [MainThread]: Flushing usage events
+[0m13:53:09.249057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72639f95c0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72639e611df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72639ee472c0>]}
+
+
+============================== 13:53:09.251033 | 70b6f552-ffaf-47c4-a273-ae80298e8fa9 ==============================
+[0m13:53:09.251033 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:53:09.251452 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/vashinav/COde/nfl_dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': '/home/vashinav/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:53:09.816017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72638a75f2f0>]}
+[0m13:53:09.852255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726380d77b60>]}
+[0m13:53:09.852788 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m13:53:09.858455 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m13:53:09.934295 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:53:09.934653 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:53:09.953911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7263809f4920>]}
+[0m13:53:10.002487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7263807fc290>]}
+[0m13:53:10.002894 [info ] [MainThread]: Found 3 models, 1 source, 453 macros
+[0m13:53:10.003207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726380dae120>]}
+[0m13:53:10.004327 [info ] [MainThread]: 
+[0m13:53:10.004798 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:53:10.007895 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_nfl_raw'
+[0m13:53:10.018334 [debug] [ThreadPool]: Using snowflake connection "list_nfl_raw"
+[0m13:53:10.018660 [debug] [ThreadPool]: On list_nfl_raw: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "connection_name": "list_nfl_raw"} */
+show terse schemas in database nfl_raw
+    limit 10000
+[0m13:53:10.018926 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:11.139391 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.120 seconds
+[0m13:53:11.141148 [debug] [ThreadPool]: On list_nfl_raw: Close
+[0m13:53:11.216240 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nfl_raw, now list_nfl_raw_dbt)
+[0m13:53:11.224966 [debug] [ThreadPool]: Using snowflake connection "list_nfl_raw_dbt"
+[0m13:53:11.225379 [debug] [ThreadPool]: On list_nfl_raw_dbt: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "connection_name": "list_nfl_raw_dbt"} */
+show objects in nfl_raw.dbt limit 10000
+[0m13:53:11.225779 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:53:11.552087 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.326 seconds
+[0m13:53:11.554031 [debug] [ThreadPool]: On list_nfl_raw_dbt: Close
+[0m13:53:11.626788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72639e98a5a0>]}
+[0m13:53:11.627440 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:53:11.627878 [info ] [MainThread]: 
+[0m13:53:11.631510 [debug] [Thread-1 (]: Began running node model.dbt_pbp.epa
+[0m13:53:11.632185 [debug] [Thread-2 (]: Began running node model.dbt_pbp.games
+[0m13:53:11.632880 [info ] [Thread-1 (]: 1 of 3 START sql view model dbt.epa ............................................ [RUN]
+[0m13:53:11.633541 [debug] [Thread-3 (]: Began running node model.dbt_pbp.plays
+[0m13:53:11.634205 [info ] [Thread-2 (]: 2 of 3 START sql view model dbt.games .......................................... [RUN]
+[0m13:53:11.634866 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_nfl_raw_dbt, now model.dbt_pbp.epa)
+[0m13:53:11.635589 [info ] [Thread-3 (]: 3 of 3 START sql view model dbt.plays .......................................... [RUN]
+[0m13:53:11.636329 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_pbp.games'
+[0m13:53:11.636860 [debug] [Thread-1 (]: Began compiling node model.dbt_pbp.epa
+[0m13:53:11.637501 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_pbp.plays'
+[0m13:53:11.638013 [debug] [Thread-2 (]: Began compiling node model.dbt_pbp.games
+[0m13:53:11.645093 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_pbp.epa"
+[0m13:53:11.645484 [debug] [Thread-3 (]: Began compiling node model.dbt_pbp.plays
+[0m13:53:11.647611 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_pbp.games"
+[0m13:53:11.649804 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_pbp.plays"
+[0m13:53:11.650430 [debug] [Thread-1 (]: Began executing node model.dbt_pbp.epa
+[0m13:53:11.651000 [debug] [Thread-2 (]: Began executing node model.dbt_pbp.games
+[0m13:53:11.661559 [debug] [Thread-3 (]: Began executing node model.dbt_pbp.plays
+[0m13:53:11.671312 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_pbp.epa"
+[0m13:53:11.673338 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_pbp.games"
+[0m13:53:11.739919 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_pbp.plays"
+[0m13:53:11.740877 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_pbp.epa"
+[0m13:53:11.741560 [debug] [Thread-1 (]: On model.dbt_pbp.epa: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.epa"} */
+create or replace   view nfl_raw.dbt.epa
+  
+   as (
+    SELECT 
+    game_id,
+    play_id,
+    home_team,
+    total_home_epa,
+    total_home_rush_epa,
+    total_home_pass_epa,
+    away_team,
+    total_away_epa,
+    total_away_rush_epa,
+    total_away_pass_epa
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY game_id, play_id
+  );
+[0m13:53:11.741948 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:53:11.742609 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_pbp.plays"
+[0m13:53:11.743636 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_pbp.games"
+[0m13:53:11.744402 [debug] [Thread-3 (]: On model.dbt_pbp.plays: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.plays"} */
+create or replace   view nfl_raw.dbt.plays
+  
+   as (
+    SELECT
+    play_id,
+    game_id,
+    posteam,
+    defteam,
+    side_of_field,
+    yardline_100,
+    game_half,
+    qtr,
+    down,
+    ydstogo,
+    game_time,
+    play_desc,
+    play_type,
+    yards_gained,
+    pass_length,
+    pass_location,
+    air_yards,
+    yards_after_catch,
+    run_location,
+    run_gap,
+    posteam_score,
+    defteam_score,
+    score_differential
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY game_id, qtr, game_time DESC
+  );
+[0m13:53:11.744948 [debug] [Thread-2 (]: On model.dbt_pbp.games: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_pbp", "target_name": "dev", "node_id": "model.dbt_pbp.games"} */
+create or replace   view nfl_raw.dbt.games
+  
+   as (
+    SELECT DISTINCT
+    game_id,
+    old_game_id,
+    home_team,
+    away_team,
+    season_type,
+    week_number,
+    game_date
+FROM nfl_raw.play_by_play.pbp_raw
+ORDER BY old_game_id
+  );
+[0m13:53:11.745332 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:53:11.745729 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:53:12.435899 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.690 seconds
+[0m13:53:12.455741 [debug] [Thread-3 (]: On model.dbt_pbp.plays: Close
+[0m13:53:12.503295 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.761 seconds
+[0m13:53:12.505884 [debug] [Thread-1 (]: On model.dbt_pbp.epa: Close
+[0m13:53:12.523948 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72638215c260>]}
+[0m13:53:12.524634 [info ] [Thread-3 (]: 3 of 3 OK created sql view model dbt.plays ..................................... [[32mSUCCESS 1[0m in 0.89s]
+[0m13:53:12.525371 [debug] [Thread-3 (]: Finished running node model.dbt_pbp.plays
+[0m13:53:12.560517 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.815 seconds
+[0m13:53:12.563088 [debug] [Thread-2 (]: On model.dbt_pbp.games: Close
+[0m13:53:12.576268 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7263807402f0>]}
+[0m13:53:12.577094 [info ] [Thread-1 (]: 1 of 3 OK created sql view model dbt.epa ....................................... [[32mSUCCESS 1[0m in 0.94s]
+[0m13:53:12.577817 [debug] [Thread-1 (]: Finished running node model.dbt_pbp.epa
+[0m13:53:12.636311 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '70b6f552-ffaf-47c4-a273-ae80298e8fa9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7263807bf230>]}
+[0m13:53:12.637141 [info ] [Thread-2 (]: 2 of 3 OK created sql view model dbt.games ..................................... [[32mSUCCESS 1[0m in 1.00s]
+[0m13:53:12.637834 [debug] [Thread-2 (]: Finished running node model.dbt_pbp.games
+[0m13:53:12.639762 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:53:12.640146 [debug] [MainThread]: Connection 'model.dbt_pbp.epa' was properly closed.
+[0m13:53:12.640524 [debug] [MainThread]: Connection 'model.dbt_pbp.games' was properly closed.
+[0m13:53:12.640902 [debug] [MainThread]: Connection 'model.dbt_pbp.plays' was properly closed.
+[0m13:53:12.641381 [info ] [MainThread]: 
+[0m13:53:12.641842 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 2.64 seconds (2.64s).
+[0m13:53:12.642871 [debug] [MainThread]: Command end result
+[0m13:53:12.660656 [info ] [MainThread]: 
+[0m13:53:12.661030 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:53:12.661300 [info ] [MainThread]: 
+[0m13:53:12.661598 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m13:53:12.662276 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.444425, "process_user_time": 2.100903, "process_kernel_time": 0.24858, "process_mem_max_rss": "222012", "process_out_blocks": "1888", "process_in_blocks": "0"}
+[0m13:53:12.662703 [debug] [MainThread]: Command `dbt run` succeeded at 13:53:12.662614 after 3.44 seconds
+[0m13:53:12.662996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72639f95c0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7263807c3fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7263835a1760>]}
+[0m13:53:12.663276 [debug] [MainThread]: Flushing usage events
